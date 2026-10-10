@@ -20,3 +20,7 @@ Reply to the user in Arabic.
 - All projects live under a main folder named `Cloud`.
 - When the user asks for a new project, create a new folder for it inside `Cloud` (`Cloud/<project-name>/`).
 - Always create the project folder in BOTH places: GitHub (this repo, `Cloud/<project-name>/` with a `.gitkeep`, committed and pushed) and Google Drive (inside the main `Cloud` folder in My Drive). Two copies, no need to ask where.
+
+## Installing plugins/skills
+
+- Any plugin installed for the user must also be recorded in `.claude/settings.json` (`extraKnownMarketplaces` + `enabledPlugins`) and pushed, so it is visible in every future session on this repo. Cloud containers are ephemeral; `~/.claude` alone is lost.
