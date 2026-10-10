@@ -19,4 +19,4 @@ Reply to the user in Arabic.
 
 - All projects live under a main folder named `Cloud`.
 - When the user asks for a new project, create a new folder for it inside `Cloud` (`Cloud/<project-name>/`).
-- Location is GitHub (this repo) or Google Drive. If the user doesn't say which, ask before creating. On Google Drive, use a main folder named `Cloud` as well.
+- Always create the project folder in BOTH places: GitHub (this repo, `Cloud/<project-name>/` with a `.gitkeep`, committed and pushed) and Google Drive (inside the main `Cloud` folder in My Drive). Two copies, no need to ask where.
