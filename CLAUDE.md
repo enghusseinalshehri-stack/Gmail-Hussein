@@ -14,3 +14,9 @@ Reply to the user in Arabic.
 
 - `hyperframes@hyperframes` (HeyGen, v0.8.145): installed but DISABLED to save ~4k tokens per session. It provides 21 video skills (HTML-to-video rendering, talking-head recut, captions, PR-to-video, slideshow, motion graphics, music-to-video, etc.).
 - If the user asks for video work, remind them it exists and ask whether to enable it (`claude plugin enable hyperframes@hyperframes`, then a new session may be needed).
+
+## New projects: one folder per project inside `Cloud`
+
+- All projects live under a main folder named `Cloud`.
+- When the user asks for a new project, create a new folder for it inside `Cloud` (`Cloud/<project-name>/`).
+- Location is GitHub (this repo) or Google Drive. If the user doesn't say which, ask before creating. On Google Drive, use a main folder named `Cloud` as well.
