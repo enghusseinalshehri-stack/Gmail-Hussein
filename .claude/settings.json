@@ -1,6 +1,6 @@
 {
   "enabledPlugins": {
-    "hyperframes@hyperframes": false,
+    "hyperframes@hyperframes": true,
     "lemo-opuscar@lemolab": true
   },
   "extraKnownMarketplaces": {
