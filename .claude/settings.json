@@ -1,4 +1,13 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(git add Cloud/*)",
+      "Bash(git add .claude/settings.json)",
+      "Bash(git commit:*)",
+      "Bash(git push -u origin claude/hyperframes-plugin-install-6ur396)",
+      "Bash(git push origin claude/hyperframes-plugin-install-6ur396)"
+    ]
+  },
   "enabledPlugins": {
     "hyperframes@hyperframes": true,
     "lemo-opuscar@lemolab": true
