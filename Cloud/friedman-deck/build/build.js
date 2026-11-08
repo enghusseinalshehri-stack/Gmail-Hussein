@@ -305,15 +305,10 @@ tx("التعويض في الصيغة", { x: 1.2, y: 1.15, w: 6.9, h: 0.4, fontSi
 });
 tx("النتيجة", { x: 8.9, y: 2.4, w: 4.1, h: 0.5, fontSize: 22, bold: true, color: C.background1, align: "center" }, "fade", 500);
 {
-  const vals = ["0.000", "1.842", "3.517", "4.968"];
   const t0 = 3900;
-  vals.forEach((v, i) => {
-    const n = tx(v, { x: 8.9, y: 3.0, w: 4.1, h: 1.6, fontSize: 80, bold: true, color: C.background1, align: "center", valign: "middle", rtlMode: false });
-    reg(n, "appear", t0 + i * 230, 1); reg(n, "disappear", t0 + (i + 1) * 230, 1);
-  });
   const fin = tx("5.429", { x: 8.9, y: 3.0, w: 4.1, h: 1.6, fontSize: 80, bold: true, color: C.background1, align: "center", valign: "middle", rtlMode: false });
-  reg(fin, "zoom", t0 + 4 * 230, 600);
-  tx("إحصاء فريدمان المحسوب", { x: 8.9, y: 4.85, w: 4.1, h: 0.5, fontSize: 18, color: C.background1, align: "center" }, "fade", t0 + 4 * 230 + 500);
+  reg(fin, "zoom", t0, 700);
+  tx("إحصاء فريدمان المحسوب", { x: 8.9, y: 4.85, w: 4.1, h: 0.5, fontSize: 18, color: C.background1, align: "center" }, "fade", t0 + 600);
 }
 
 // 16. divider
